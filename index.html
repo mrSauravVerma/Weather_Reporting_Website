@@ -1,20 +1,96 @@
-<html><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Weather Report</h1>
-        <div class="search">
-            <input type="text" id="city" placeholder="Enter city name">
-            <button onclick="getWeather()">Get Weather</button>
-        </div>
-        <div class="weather-info" id="weather-info">
-            <!-- Weather information will be displayed here -->
-        </div>
-    </div>
-    <script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-</body></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather reporting web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="main">
+    <video autoplay muted loop class="back-video">
+      <source src="background video.mp4" />
+    </video>
+
+    <div class="card">
+
+      <div class="search-bar">
+        <input type="text" placeholder="Enter Your City Name" spellcheck="false" />
+        <i class="fa-solid fa-magnifying-glass" id="btn"></i>
+      </div>
+
+      <div class="error" style="display:none;">
+        Invalid City Name!
+      </div>
+
+      <div class="weather-image">
+        <img class="weather-icon" src="images/clear.png" alt="Weather Icon" />
+      </div>
+
+      <div class="temperature">
+        <h1><span class="temp">--</span> °C</h1>
+        <h1>in <span class="city">--</span></h1>
+      </div>
+
+      <div class="weather-details">
+        <div class="details">
+          <i class="fa-solid fa-temperature-three-quarters"></i>
+          <div class="details-data">
+            <p>Feels like</p>
+            <p><span class="feels-like">--</span> °C</p>
+          </div>
+        </div>
+
+        <div class="details">
+          <i class="fa-solid fa-droplet"></i>
+          <div class="details-data">
+            <p>Humidity</p>
+            <p><span class="humidity">--</span> %</p>
+          </div>
+        </div>
+
+        <div class="details">
+          <i class="fa-solid fa-wind"></i>
+          <div class="details-data">
+            <p>Wind speed</p>
+            <p><span class="wind-speed">--</span> Km/h</p>
+          </div>
+        </div>
+
+        <div class="details">
+          <i class="fa-solid fa-fan"></i>
+          <div class="details-data">
+            <p>Air pressure</p>
+            <p><span class="air-pressure">--</span> hPa</p>
+          </div>
+        </div>
+
+        <div class="details">
+          <i class="fa-solid fa-eye"></i>
+          <div class="details-data">
+            <p>Visibility</p>
+            <p><span class="visibility">--</span> Km</p>
+          </div>
+        </div>
+
+        <div class="details">
+          <i class="fa-solid fa-cloud"></i>
+          <div class="details-data">
+            <p>Cloudiness</p>
+            <p><span class="extra-info">--</span> %</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
