@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather website </title>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar with Search Box -->
+        <div class="navbar">
+            <div class="logo">Weather</div>
+            <div class="search-bar">
+                <input class="Hover" type="text" id="search-city" placeholder="Enter city name">
+                <button class="Hover" id="get-weather">Get Weather</button>
+            </div>
+        </div>
+
+        <!-- Main Weather Section -->
+        <div class="main-weather Hover">
+            <div class="info">
+                <h1>--°C</h1>
+                <p>Weather Description</p>
+                <div class="details">
+                    <p>Feels Like: --°C</p>
+                    <p>Humidity: --%</p>
+                    <p>Wind Speed: -- m/s</p>
+                    <p>Visibility: -- km</p>
+                </div>
+            </div>
+
+            <div class="city_name">
+                <h1></h1>
+            </div>
+
+            <div class="icon">
+                <img src="images/cloudy.png" alt="Weather Icon">
+            </div>
+        </div>
+
+        <!-- next 7 days Forecast Section -->
+        <div class="weekly-forecast">
+            <div class="day Hover" id="monday">
+                <h3>Monday</h3>
+                <img src="" alt="">
+                <p>High: --° Low: --°</p>
+            </div>
+            <div class="day Hover" id="tuesday">
+                <h3>Tuesday</h3>
+                <img src="" alt="">
+                <p>High: --° Low: --°</p>
+            </div>
+            <div class="day Hover" id="wednesday">
+                <h3>Wednesday</h3>
+                <img src="" alt="">
+                <p>High: --° Low: --°</p>
+            </div>
+            <div class="day Hover" id="thursday">
+                <h3>Thursday</h3>
+                <img src="" alt="">
+                <p>High: --° Low: --°</p>
+            </div>
+            <div class="day Hover" id="friday">
+                <h3>Friday</h3>
+                <img src="" alt="">
+                <p>High: --° Low: --°</p>
+            </div>
+            <div class="day Hover" id="saturday">
+                <h3>Saturday</h3>
+                <img src="" alt="">
+                <p>High: --° Low: --°</p>
+            </div>
+            <div class="day Hover" id="sunday">
+                <h3>Sunday</h3>
+                <img src="" alt="">
+                <p>High: --° Low: --°</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 Weather Web | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
